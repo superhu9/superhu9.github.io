@@ -13,7 +13,7 @@ title                    : "Hu Yang"
 title_separator          : "-"
 name                     : &name " Hu Yang "
 description              : &description "Filmmaker&Student"   # Update this with a general description of your site, this is the default if not overridden by a page
-url: "https://huayang.online"
+url: "https://huyang.online"
 baseurl: ""
 repository               : "superhu9/superhu9.github.io"
 
