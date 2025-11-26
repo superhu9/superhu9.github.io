@@ -75,7 +75,7 @@ author_profile: true
 <div class="works-container">
 
   <div class="work-item">
-    <div class="work-title">万火归一 (Ten Thousand Fires Return to One)</div>
+    <div class="work-title">万火归一 </div>
     
     <video controls preload="metadata" poster="/images/poster_wanhuo.jpg">
       <source src="https://work.huyang.online/%E3%80%8A%E4%B8%87%E7%81%AB%E5%BD%92%E4%B8%80%E3%80%8B.mp4" type="video/mp4">
@@ -84,7 +84,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 剧情短片</span>
       <span class="meta-tag">📅 2023</span>
-      <span class="meta-tag">👤 职务: 制片人 (Producer)</span>
+      <span class="meta-tag">👤 制片人 (Producer)</span>
     </div>
 
     <div class="work-awards">
@@ -103,7 +103,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 纪录片</span>
       <span class="meta-tag">📅 2024</span>
-      <span class="meta-tag">👤 职务: 后期总监</span>
+      <span class="meta-tag">👤 后期总监</span>
     </div>
     
     <div class="work-awards">
@@ -119,9 +119,9 @@ author_profile: true
     </video>
     
     <div class="work-meta">
-      <span class="meta-tag">🎬 类型: 宣传片</span>
+      <span class="meta-tag">🎬 宣传片</span>
       <span class="meta-tag">📅 2021</span>
-      <span class="meta-tag">👤 职务: 摄影掌机</span>
+      <span class="meta-tag">👤 摄影掌机</span>
     </div>
     
     <div class="work-awards">
@@ -139,7 +139,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 AIGC短片</span>
       <span class="meta-tag">📅 2024</span>
-      <span class="meta-tag">👤 职务: 导演</span>
+      <span class="meta-tag">👤 导演/后期总监</span>
     </div>
 
         <div class="work-awards">
@@ -157,7 +157,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 AIGC短片</span>
       <span class="meta-tag">📅 2024</span>
-      <span class="meta-tag">👤 职务: 导演/后期总监</span>
+      <span class="meta-tag">👤 导演/后期总监</span>
     </div>
         
             <div class="work-awards">
@@ -166,7 +166,7 @@ author_profile: true
   </div>
 
 
-    <div class="work-item">
+   <div class="work-item">
     <div class="work-title">方</div>
     <video controls preload="metadata">
       <source src="https://work.huyang.online/%E3%80%8A%E6%96%B9%E3%80%8B.mp4" type="video/mp4">
@@ -175,7 +175,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 AIGC短片</span>
       <span class="meta-tag">📅 2024</span>
-      <span class="meta-tag">👤 职务: 导演</span>
+      <span class="meta-tag">👤 导演/后期总监</span>
     </div>
 
             <div class="work-awards">
@@ -185,7 +185,7 @@ author_profile: true
 
   
   <div class="work-item">
-    <div class="work-title">塬 (The Plateau)</div>
+    <div class="work-title">塬 </div>
     <video controls preload="metadata">
       <source src="https://work.huyang.online/%E3%80%8A%E5%A1%AC%E3%80%8B.mp4" type="video/mp4">
     </video>
@@ -193,7 +193,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 剧情短片</span>
       <span class="meta-tag">📅 2020</span>
-      <span class="meta-tag">👤 职务: 摄影掌镜</span>
+      <span class="meta-tag">👤 摄影掌镜</span>
     </div>
   </div>
 
@@ -207,7 +207,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 剧情短片</span>
       <span class="meta-tag">📅 2021</span>
-      <span class="meta-tag">👤 职务: 摄影掌镜</span>
+      <span class="meta-tag">👤 摄影掌镜</span>
     </div>
   </div>
 
@@ -221,7 +221,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 MV</span>
       <span class="meta-tag">📅 2020</span>
-      <span class="meta-tag">👤 职务: 摄影掌镜/后期总监</span>
+      <span class="meta-tag">👤 摄影掌镜/后期总监</span>
     </div>
   </div>
 
@@ -235,7 +235,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 实验短片</span>
       <span class="meta-tag">📅 2019</span>
-      <span class="meta-tag">👤 职务: 导演/摄影掌镜/后期总监</span>
+      <span class="meta-tag">👤 导演/摄影掌镜/后期总监</span>
     </div>
     
             <div class="work-awards">
@@ -253,7 +253,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 宣传片</span>
       <span class="meta-tag">📅 2024</span>
-      <span class="meta-tag">👤 职务: 后期总监</span>
+      <span class="meta-tag">👤 后期总监</span>
     </div>
   </div>
 
