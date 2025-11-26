@@ -108,7 +108,10 @@ redirect_from:
 <br>
 
 <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
-  <a href="/files/resume.pdf" target="_blank" class="btn btn--primary btn--large">
+  <a href="https://work.huyang.online/其文/resume.pdf" target="_blank" class="btn btn--primary btn--large">
     <i class="fas fa-file-download"></i> 查看/下载 完整版简历 (PDF)
   </a>
+  <p style="font-size: 0.8em; color: #666; margin-top: 10px;">
+    *点击可直接在浏览器预览或下载
+  </p>
 </div>
