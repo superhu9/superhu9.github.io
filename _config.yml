@@ -13,7 +13,8 @@ title                    : "Hu Yang"
 title_separator          : "-"
 name                     : &name " Hu Yang "
 description              : &description "Filmmaker&Student"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://superhu9.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
+url: "https://huayang.online"
+baseurl: ""
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "superhu9/superhu9.github.io"
@@ -26,9 +27,11 @@ author:
   avatar           : "profile.png"
   name             : "Hu Yang"
   pronouns         : # example: "she/her"  
-  bio              : "Filmmaker | Creative Technologist | AI Researcher
-                   : "I explore the intersection of Cinematic Art and Artificial Intelligence."
-                   : "Currently a Master's student at XUPT, focusing on AIGC, 8K Ultra-HD imaging, and Immersive Media."
+   bio: >
+    Filmmaker | Creative Technologist | AI Researcher.
+    I explore the intersection of Cinematic Art and Artificial Intelligence.
+    Currently a Master's student at XUPT, focusing on AIGC, 8K Ultra-HD imaging, and Immersive Media.
+
   location         : "Xi 'an, Shaanxi Province, China"
   employer         : "Xi 'an University of Posts and Telecommunications"
   uri              : # URL
