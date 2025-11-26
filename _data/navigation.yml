@@ -1,28 +1,21 @@
 # main links
 main:
-  # 1. 首页 (About) - 有些模板这里不显示文字，只显示名字
-  # 如果你想加一个“首页”或“其人”，可以加一行，但通常点左上角名字就回首页了
-
-  # 2. 作品集 (Works) -> 其作
+  - title: "其人"
+    url: /
   - title: "其作"
     url: /works/
-
-  # 3. 文档/论文 (Publications) -> 其文
-  # 对应原本的 /publications/ 页面，你可以在那里放你的PDF
   - title: "其文"
     url: /publications/
 
-  # 4. 讲座 (Talks) -> 其言
-  - title: "其言"
-    url: /talks/
-
-  # 5. 博客 (Blog Posts) -> 其志
-  - title: "其志"
-    url: /year-archive/
-
-  # 6. 简历 (CV) -> 其历
+  # ⭐ 关键修改：其历放在这里
   - title: "其历"
     url: /cv/
+
+  # ⭐ 其言、其志现在在后面
+  - title: "其言"
+    url: /talks/
+  - title: "其志"
+    url: /year-archive/
 
   # 7. 教学 (Teaching) -> 其教
   # 如果你以后当助教或老师了可以留着，暂时不需要就加 # 注释掉
