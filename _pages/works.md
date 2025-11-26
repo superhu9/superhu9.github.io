@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "作品（部分）"
+title: ""
 permalink: /works/
 author_profile: true
 ---
