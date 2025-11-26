@@ -316,4 +316,41 @@ scripts:  # 必须和上面几行左侧对齐
 <div class="end-marker"></div>
 <p>...</p> 
 
-{% include pdf-viewer-logic.html %}
+<script>
+  // 你的 PDF 存放目录，根据实际情况修改
+  // 如果 PDF 就放在 /publications/ 同级目录里，可以写成 '' 或 '/publications/'
+  const pdfBasePath = "/publications/"; // ❗注意这里要改成你真实的路径
+
+  // 全局函数，供 onclick 调用
+  function openPDF(fileName) {
+    // 1. 先把所有 viewer 关掉并清空内容
+    document.querySelectorAll(".pdf-viewer-container").forEach(function (el) {
+      el.style.display = "none";
+      el.innerHTML = "";
+    });
+
+    // 2. 找到对应容器：id = "viewer-" + 文件名
+    var containerId = "viewer-" + fileName;
+    var container = document.getElementById(containerId);
+    if (!container) {
+      console.error("找不到容器：", containerId);
+      return;
+    }
+
+    container.style.display = "block";
+
+    // 3. 创建 iframe 展示 PDF
+    var iframe = document.createElement("iframe");
+    // encodeURIComponent 可以处理中文、空格等
+    iframe.src = pdfBasePath + encodeURIComponent(fileName);
+    iframe.width = "100%";
+    iframe.height = "100%";
+    iframe.style.border = "none";
+
+    container.appendChild(iframe);
+
+    // 4. 滚动到预览位置（可选）
+    container.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+</script>
+
