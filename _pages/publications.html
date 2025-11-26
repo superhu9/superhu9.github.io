@@ -216,7 +216,7 @@ author_profile: true
       return;
     }
     
-    // 关闭其他
+    // 关闭其他正在显示的阅读器
     document.querySelectorAll('.pdf-viewer-container').forEach(el => el.style.display = 'none');
     container.style.display = "block";
 
@@ -226,8 +226,9 @@ author_profile: true
         return;
     }
 
-    // 关键更新：将查找路径改为 /其文/
-    const fileUrl = "/其文/" + encodeURIComponent(fileName);
+    // ⭐ 关键更改：使用 R2 的绝对路径，并对中文文件名进行编码
+    const R2_BASE_URL = "https://work.huyang.online/其文/";
+    const fileUrl = R2_BASE_URL + encodeURIComponent(fileName); 
 
     var adobeDCView = new AdobeDC.View({
       clientId: CLIENT_ID, 
