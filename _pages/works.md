@@ -61,12 +61,14 @@ author_profile: true
 
   /* 视频样式 */
   video {
-    width: 100%;
+    width: 100%;           /* 宽度占满容器 */
+    height: auto;          /* 高度自动！不要强制16:9 */
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    background: #000;
+    background: #000;      /* 视频加载前的黑底 */
     margin-bottom: 15px;
     outline: none;
+    display: block;        /* 防止底部出现微小白边 */
   }
 </style>
 
@@ -93,24 +95,6 @@ author_profile: true
 
 
   <div class="work-item">
-    <div class="work-title">天下无毒·光明永驻</div>
-    <video controls preload="metadata">
-      <source src="https://work.huyang.online/%E3%80%8A%E5%A4%A9%E4%B8%8B%E6%97%A0%E6%AF%92%C2%B7%E5%85%89%E6%98%8E%E6%B0%B8%E9%A9%BB%E3%80%8B.mp4" type="video/mp4">
-    </video>
-    
-    <div class="work-meta">
-      <span class="meta-tag">🎬 类型: 宣传片</span>
-      <span class="meta-tag">📅 2021</span>
-      <span class="meta-tag">👤 职务: 摄影掌机</span>
-    </div>
-    
-    <div class="work-awards">
-      <span class="award-icon">🏆</span> [四川省成都市金牛公安禁毒短片]
-    </div>
-  </div>
-
-
-  <div class="work-item">
     <div class="work-title">2107学兵连</div>
     <video controls preload="metadata">
       <source src="https://work.huyang.online/%E3%80%8A2107%E5%AD%A6%E5%85%B5%E8%BF%9E%E3%80%8B.mp4" type="video/mp4">
@@ -124,6 +108,24 @@ author_profile: true
     
     <div class="work-awards">
       <span class="award-icon">🏆</span> CCTV-9 纪录频道播出
+    </div>
+  </div>
+
+  
+  <div class="work-item">
+    <div class="work-title">天下无毒·光明永驻</div>
+    <video controls preload="metadata">
+      <source src="https://work.huyang.online/%E3%80%8A%E5%A4%A9%E4%B8%8B%E6%97%A0%E6%AF%92%C2%B7%E5%85%89%E6%98%8E%E6%B0%B8%E9%A9%BB%E3%80%8B.mp4" type="video/mp4">
+    </video>
+    
+    <div class="work-meta">
+      <span class="meta-tag">🎬 类型: 宣传片</span>
+      <span class="meta-tag">📅 2021</span>
+      <span class="meta-tag">👤 职务: 摄影掌机</span>
+    </div>
+    
+    <div class="work-awards">
+      <span class="award-icon">🏆</span> [四川省成都市金牛公安禁毒短片]
     </div>
   </div>
 
@@ -147,20 +149,24 @@ author_profile: true
 
 
   <div class="work-item">
-    <div class="work-title">塬 (The Plateau)</div>
+    <div class="work-title">邮梦启航</div>
     <video controls preload="metadata">
-      <source src="https://work.huyang.online/%E3%80%8A%E5%A1%AC%E3%80%8B.mp4" type="video/mp4">
+      <source src="https://work.huyang.online/%E3%80%8A%E9%82%AE%E6%A2%A6%E5%90%AF%E8%88%AA%E3%80%8B.mp4" type="video/mp4">
     </video>
     
     <div class="work-meta">
-      <span class="meta-tag">🎬 剧情短片</span>
-      <span class="meta-tag">📅 2020</span>
-      <span class="meta-tag">👤 职务: 摄影掌镜</span>
+      <span class="meta-tag">🎬 AIGC短片</span>
+      <span class="meta-tag">📅 2024</span>
+      <span class="meta-tag">👤 职务: 导演/后期总监</span>
+    </div>
+        
+            <div class="work-awards">
+      <span class="award-icon">🏆</span> 中国国际大学生创新大赛（陕西赛区）2024年启动仪式开幕影片
     </div>
   </div>
 
 
-  <div class="work-item">
+    <div class="work-item">
     <div class="work-title">方</div>
     <video controls preload="metadata">
       <source src="https://work.huyang.online/%E3%80%8A%E6%96%B9%E3%80%8B.mp4" type="video/mp4">
@@ -177,7 +183,21 @@ author_profile: true
     </div>
   </div>
 
+  
+  <div class="work-item">
+    <div class="work-title">塬 (The Plateau)</div>
+    <video controls preload="metadata">
+      <source src="https://work.huyang.online/%E3%80%8A%E5%A1%AC%E3%80%8B.mp4" type="video/mp4">
+    </video>
+    
+    <div class="work-meta">
+      <span class="meta-tag">🎬 剧情短片</span>
+      <span class="meta-tag">📅 2020</span>
+      <span class="meta-tag">👤 职务: 摄影掌镜</span>
+    </div>
+  </div>
 
+  
   <div class="work-item">
     <div class="work-title">晚归</div>
     <video controls preload="metadata">
@@ -238,21 +258,6 @@ author_profile: true
   </div>
 
 
-  <div class="work-item">
-    <div class="work-title">邮梦启航</div>
-    <video controls preload="metadata">
-      <source src="https://work.huyang.online/%E3%80%8A%E9%82%AE%E6%A2%A6%E5%90%AF%E8%88%AA%E3%80%8B.mp4" type="video/mp4">
-    </video>
-    
-    <div class="work-meta">
-      <span class="meta-tag">🎬 AIGC短片</span>
-      <span class="meta-tag">📅 2024</span>
-      <span class="meta-tag">👤 职务: 导演/后期总监</span>
-    </div>
-        
-            <div class="work-awards">
-      <span class="award-icon">🏆</span> 中国国际大学生创新大赛（陕西赛区）2024年启动仪式开幕影片
-    </div>
-  </div>
+
 
 </div>
