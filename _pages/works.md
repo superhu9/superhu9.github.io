@@ -111,24 +111,6 @@ author_profile: true
     </div>
   </div>
 
-  
-  <div class="work-item">
-    <div class="work-title">天下无毒·光明永驻</div>
-    <video controls preload="metadata">
-      <source src="https://work.huyang.online/%E3%80%8A%E5%A4%A9%E4%B8%8B%E6%97%A0%E6%AF%92%C2%B7%E5%85%89%E6%98%8E%E6%B0%B8%E9%A9%BB%E3%80%8B.mp4" type="video/mp4">
-    </video>
-    
-    <div class="work-meta">
-      <span class="meta-tag">🎬 宣传片</span>
-      <span class="meta-tag">📅 2021</span>
-      <span class="meta-tag">👤 摄影掌机</span>
-    </div>
-    
-    <div class="work-awards">
-      <span class="award-icon">🏆</span> [四川省成都市金牛公安禁毒短片]
-    </div>
-  </div>
-
 
   <div class="work-item">
     <div class="work-title">人生不过词九片</div>
@@ -184,6 +166,40 @@ author_profile: true
   </div>
 
   
+  <div class="work-item">
+    <div class="work-title">陕西重点文物虚拟现实展示走廊</div>
+    
+    <video controls preload="metadata">
+      <source src="https://work.huyang.online/%E3%80%8A%E9%99%95%E8%A5%BF%E9%87%8D%E7%82%B9%E6%96%87%E7%89%A9%E8%99%9A%E6%8B%9F%E7%8E%B0%E5%AE%9E%E5%B1%95%E7%A4%BA%E8%B5%B0%E5%BB%8A%E3%80%8B.mp4" type="video/mp4">
+    </video>
+    
+    <div class="work-meta">
+      <span class="meta-tag">🎬 虚拟现实/数字交互</span>
+      <span class="meta-tag">📅 2024</span>
+      <span class="meta-tag">👤 职务: 技术开发/主创</span>
+    </div>
+   </div>
+
+   
+  <div class="work-item">
+    <div class="work-title">天下无毒·光明永驻</div>
+    <video controls preload="metadata">
+      <source src="https://work.huyang.online/%E3%80%8A%E5%A4%A9%E4%B8%8B%E6%97%A0%E6%AF%92%C2%B7%E5%85%89%E6%98%8E%E6%B0%B8%E9%A9%BB%E3%80%8B.mp4" type="video/mp4">
+    </video>
+    
+    <div class="work-meta">
+      <span class="meta-tag">🎬 宣传片</span>
+      <span class="meta-tag">📅 2021</span>
+      <span class="meta-tag">👤 摄影掌机</span>
+    </div>
+    
+    <div class="work-awards">
+      <span class="award-icon">🏆</span> [四川省成都市金牛公安禁毒短片]
+    </div>
+  </div>
+
+
+
   <div class="work-item">
     <div class="work-title">塬 </div>
     <video controls preload="metadata">
