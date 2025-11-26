@@ -174,7 +174,7 @@ author_profile: true
     </video>
     
     <div class="work-meta">
-      <span class="meta-tag">🎬 虚拟现实/数字交互</span>
+      <span class="meta-tag">🎬 数字交互</span>
       <span class="meta-tag">📅 2024</span>
       <span class="meta-tag">👤 职务: 技术开发/主创</span>
     </div>
