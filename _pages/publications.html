@@ -8,7 +8,7 @@ author_profile: true
 <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 
 <style>
-  /* 标题样式 */
+  /* 样式美化 */
   .pub-category {
     margin-top: 50px;
     margin-bottom: 25px;
@@ -17,10 +17,9 @@ author_profile: true
     font-size: 1.5em;
     font-weight: bold;
     color: #222;
-    font-family: "Noto Serif SC", serif; /* 配合你的古风 */
+    font-family: "Noto Serif SC", serif;
   }
   
-  /* 单个文件条目样式 */
   .pdf-item {
     margin-bottom: 12px;
     padding: 12px 15px;
@@ -43,7 +42,7 @@ author_profile: true
 
   .pdf-icon {
     margin-right: 12px;
-    color: #d9534f; /* 红色图标 */
+    color: #d9534f;
     width: 20px;
     text-align: center;
   }
@@ -58,14 +57,13 @@ author_profile: true
     color: #aaa;
   }
 
-  /* PDF 阅读器容器 */
   .pdf-viewer-container {
     width: 100%;
-    height: 700px; /* 阅读器高度，大一点舒服 */
+    height: 750px; /* 阅读器高度 */
     border: 1px solid #ddd;
     margin-bottom: 20px;
     background: #f0f0f0;
-    display: none; /* 默认隐藏 */
+    display: none;
   }
 </style>
 
@@ -76,272 +74,145 @@ author_profile: true
 
 <div class="pub-category">📖 小说 · 随想</div>
 
-<div class="pdf-item" onclick="openPDF('novel_suixiang_1.pdf')">
+<div class="pdf-item" onclick="openPDF('《随想一》.pdf')">
   <span class="pdf-title"><i class="fas fa-book pdf-icon"></i> 随想 Ⅰ</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-novel_suixiang_1.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-《随想一》.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('novel_suixiang_2.pdf')">
+<div class="pdf-item" onclick="openPDF('《随想二》.pdf')">
   <span class="pdf-title"><i class="fas fa-book pdf-icon"></i> 随想 Ⅱ</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-novel_suixiang_2.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-《随想二》.pdf" class="pdf-viewer-container"></div>
 
 
 <div class="pub-category">📊 策划 · 项目</div>
 
-<div class="pdf-item" onclick="openPDF('plan_crisis.pdf')">
+<div class="pdf-item" onclick="openPDF('20250322飞跃危机策划案.pdf')">
   <span class="pdf-title"><i class="fas fa-file-powerpoint pdf-icon"></i> 2025飞跃危机策划案</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-plan_crisis.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20250322飞跃危机策划案.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('plan_fang.pdf')">
+<div class="pdf-item" onclick="openPDF('20240620《方》项目书.pdf')">
   <span class="pdf-title"><i class="fas fa-project-diagram pdf-icon"></i> 《方》项目书</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-plan_fang.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20240620《方》项目书.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('plan_life.pdf')">
+<div class="pdf-item" onclick="openPDF('20240125《人生不过词九片》项目书.pdf')">
   <span class="pdf-title"><i class="fas fa-project-diagram pdf-icon"></i> 《人生不过词九片》项目书</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-plan_life.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20240125《人生不过词九片》项目书.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('plan_tea.pdf')">
+<div class="pdf-item" onclick="openPDF('20240121西乡春茶包装设计.pdf')">
   <span class="pdf-title"><i class="fas fa-paint-brush pdf-icon"></i> 西乡春茶包装设计</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-plan_tea.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20240121西乡春茶包装设计.pdf" class="pdf-viewer-container"></div>
 
 
 <div class="pub-category">🔬 学术 · 课题</div>
 
-<div class="pdf-item" onclick="openPDF('paper_deepseek.pdf')">
+<div class="pdf-item" onclick="openPDF('20250226DeepSeek与AIGC应用（导演剪辑版） .pdf')">
   <span class="pdf-title"><i class="fas fa-microchip pdf-icon"></i> DeepSeek与AIGC应用 (导演剪辑版)</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_deepseek.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20250226DeepSeek与AIGC应用（导演剪辑版） .pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('paper_8k_emotion.pdf')">
+<div class="pdf-item" onclick="openPDF('基于8K影像的超高清影像情感重构研究.pdf')">
   <span class="pdf-title"><i class="fas fa-eye pdf-icon"></i> 基于8K影像的超高清影像情感重构研究</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_8k_emotion.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-基于8K影像的超高清影像情感重构研究.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('paper_8k_embodiment.pdf')">
+<div class="pdf-item" onclick="openPDF('20240329遥在、体验和重构_8K超高清影像的具身认知与情感召唤.pdf')">
   <span class="pdf-title"><i class="fas fa-vr-cardboard pdf-icon"></i> 遥在、体验和重构：8K超高清影像的具身认知</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_8k_embodiment.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20240329遥在、体验和重构_8K超高清影像的具身认知与情感召唤.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('paper_ai_consciousness.pdf')">
+<div class="pdf-item" onclick="openPDF('20231008被误解的AI革命_人工智能的自我意识与剩余价值探.pdf')">
   <span class="pdf-title"><i class="fas fa-robot pdf-icon"></i> 被误解的AI革命：人工智能的自我意识</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_ai_consciousness.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20231008被误解的AI革命_人工智能的自我意识与剩余价值探.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('paper_ai_evolution.pdf')">
+<div class="pdf-item" onclick="openPDF('20250308AI演进？人类演退？ .pdf')">
   <span class="pdf-title"><i class="fas fa-dna pdf-icon"></i> AI演进？人类演退？</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_ai_evolution.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20250308AI演进？人类演退？ .pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('paper_entropy.pdf')">
+<div class="pdf-item" onclick="openPDF('20230909逆熵_人工智能技术在影像修复领域的应用.pdf')">
   <span class="pdf-title"><i class="fas fa-tools pdf-icon"></i> 逆熵：人工智能技术在影像修复领域的应用</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_entropy.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20230909逆熵_人工智能技术在影像修复领域的应用.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('paper_sora.pdf')">
+<div class="pdf-item" onclick="openPDF('Sora的时间—一致性和因果逻辑性.pdf')">
   <span class="pdf-title"><i class="fas fa-video pdf-icon"></i> Sora的时间——一致性和因果逻辑性</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_sora.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-Sora的时间—一致性和因果逻辑性.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('paper_xr.pdf')">
+<div class="pdf-item" onclick="openPDF('20231013扩展现实领域下的全新视听语言探索_XR 技术应用前沿.pdf')">
   <span class="pdf-title"><i class="fas fa-glasses pdf-icon"></i> 扩展现实领域下的全新视听语言探索</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_xr.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20231013扩展现实领域下的全新视听语言探索_XR 技术应用前沿.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('paper_micro_drama.pdf')">
+<div class="pdf-item" onclick="openPDF('20250415微短剧思考.pdf')">
   <span class="pdf-title"><i class="fas fa-mobile-alt pdf-icon"></i> 微短剧思考</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_micro_drama.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-20250415微短剧思考.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('paper_mobile.pdf')">
+<div class="pdf-item" onclick="openPDF('不可能三角——移动端影像处理的能耗优化问题.pdf')">
   <span class="pdf-title"><i class="fas fa-battery-half pdf-icon"></i> 不可能三角——移动端影像处理的能耗优化问题</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-paper_mobile.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-不可能三角——移动端影像处理的能耗优化问题.pdf" class="pdf-viewer-container"></div>
 
 
-<div class="pub-category">✍️ 杂文 · 随笔</div>
+<div class="pub-category">⚽ 杂文 · 足坛</div>
 
-<div class="pdf-item" onclick="openPDF('essay_prison_break.pdf')">
-  <span class="pdf-title"><i class="fas fa-newspaper pdf-icon"></i> 朝鲜中央党报说评美剧《越狱》</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_prison_break.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_feedback.pdf')">
-  <span class="pdf-title"><i class="fas fa-comment-dots pdf-icon"></i> 关于公众号《胡说的话》2022更新计划的反馈</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_feedback.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_kaiduan.pdf')">
-  <span class="pdf-title"><i class="fas fa-tv pdf-icon"></i> 《开端》中幼稚的共同体图景和危机隐喻</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_kaiduan.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_women.pdf')">
-  <span class="pdf-title"><i class="fas fa-book-reader pdf-icon"></i> 《论女人》：叔本华，厌女症与虚无主义</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_women.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_dust.pdf')">
-  <span class="pdf-title"><i class="fas fa-film pdf-icon"></i> 《隐入尘烟》——你穷你也惨</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_dust.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_incantation.pdf')">
-  <span class="pdf-title"><i class="fas fa-film pdf-icon"></i> 《咒》我们没救了，所以我们更爽</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_incantation.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_tangshan.pdf')">
-  <span class="pdf-title"><i class="fas fa-bullhorn pdf-icon"></i> 被阉割的男人和裹挟的红布——唐山打人案舆论有感</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_tangshan.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_scu.pdf')">
-  <span class="pdf-title"><i class="fas fa-university pdf-icon"></i> 川大违规封校抗议有感</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_scu.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_war.pdf')">
-  <span class="pdf-title"><i class="fas fa-globe-europe pdf-icon"></i> 俄乌冲突的历史观冲突</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_war.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_korea_film.pdf')">
-  <span class="pdf-title"><i class="fas fa-film pdf-icon"></i> 二十一世纪韩国电影崛起之路</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_korea_film.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_crossroads.pdf')">
-  <span class="pdf-title"><i class="fas fa-road pdf-icon"></i> 诡异的十字交叉——幼稚的青年和成熟的少年</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_crossroads.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_grades.pdf')">
-  <span class="pdf-title"><i class="fas fa-graduation-cap pdf-icon"></i> 你成绩不理想的根本原因与解决方法</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_grades.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_northeast.pdf')">
-  <span class="pdf-title"><i class="fas fa-city pdf-icon"></i> 青年人为什么会共情东北的衰败？</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_northeast.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_youth.pdf')">
-  <span class="pdf-title"><i class="fas fa-seedling pdf-icon"></i> 青年要快速成长起来，要坚持对于严肃性的追求</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_youth.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_pinduoduo.pdf')">
-  <span class="pdf-title"><i class="fas fa-shopping-bag pdf-icon"></i> 我们要历史地、现实地站在拼多多一边</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_pinduoduo.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('essay_modernity.pdf')">
-  <span class="pdf-title"><i class="fas fa-moon pdf-icon"></i> 一个无力的现代性幻想</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-essay_modernity.pdf" class="pdf-viewer-container"></div>
-
-
-<div class="pub-category">⚽ 足坛 · 人物志</div>
-
-<div class="pdf-item" onclick="openPDF('essay_ucl.pdf')">
+<div class="pdf-item" onclick="openPDF('2022欧冠决赛与中国足球——中国足球错在哪了？ .pdf')">
   <span class="pdf-title"><i class="fas fa-futbol pdf-icon"></i> 2022欧冠决赛与中国足球</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-essay_ucl.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-2022欧冠决赛与中国足球——中国足球错在哪了？ .pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('essay_12_qualifiers.pdf')">
-  <span class="pdf-title"><i class="fas fa-futbol pdf-icon"></i> 2022十二强赛后有感</span>
+<div class="pdf-item" onclick="openPDF('被阉割的男人和裹挟的红布——唐山打人案舆论有感.pdf')">
+  <span class="pdf-title"><i class="fas fa-pen-fancy pdf-icon"></i> 被阉割的男人和裹挟的红布</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-essay_12_qualifiers.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-被阉割的男人和裹挟的红布——唐山打人案舆论有感.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('foot_abramovich.pdf')">
-  <span class="pdf-title"><i class="fas fa-user pdf-icon"></i> 阿布——罗曼帝国之覆</span>
+<div class="pdf-item" onclick="openPDF('足坛人物志·阿布——罗曼帝国之覆.pdf')">
+  <span class="pdf-title"><i class="fas fa-user pdf-icon"></i> 足坛人物志：阿布——罗曼帝国之覆</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-foot_abramovich.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('foot_bielsa.pdf')">
-  <span class="pdf-title"><i class="fas fa-user pdf-icon"></i> 贝尔萨——理想纪元失去了最后一个梦想家</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-foot_bielsa.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('foot_ndombele.pdf')">
-  <span class="pdf-title"><i class="fas fa-user pdf-icon"></i> 恩东贝莱——疲惫的身躯装不下艺术家的心灵</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-foot_ndombele.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('foot_karius.pdf')">
-  <span class="pdf-title"><i class="fas fa-user pdf-icon"></i> 卡里乌斯——厄运缠身还是心魔难破</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-foot_karius.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('foot_kroos.pdf')">
-  <span class="pdf-title"><i class="fas fa-user pdf-icon"></i> 克罗斯——克莱枫丹童话的新篇章</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-foot_kroos.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('foot_wenger.pdf')">
-  <span class="pdf-title"><i class="fas fa-user pdf-icon"></i> 温格——为什么说进攻才是足球？</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-foot_wenger.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('foot_wulei.pdf')">
-  <span class="pdf-title"><i class="fas fa-user pdf-icon"></i> 武磊——加泰罗尼亚的晚风吹散了一曲中国梦</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-foot_wulei.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-足坛人物志·阿布——罗曼帝国之覆.pdf" class="pdf-viewer-container"></div>
 
 
 <script type="text/javascript">
-  const CLIENT_ID = "a2fcae797df24d6784d7753a4ae11c8c"; // 你的专属ID
+  const CLIENT_ID = "a2fcae797df24d6784d7753a4ae11c8c"; // 你的ID
 
   function openPDF(fileName) {
+    // 兼容中文文件名的处理：
+    // 1. HTML ID 不能包含空格或中文标点太复杂，所以我们做个简单的转义
+    // 注意：这里 divID 直接用文件名可能在某些旧浏览器报错，但现代浏览器通常支持
     const divId = "viewer-" + fileName;
     const container = document.getElementById(divId);
     
+    if (!container) {
+        alert("找不到文件容器，请检查文件名代码是否匹配：" + fileName);
+        return;
+    }
+
     // 开关逻辑
     if (container.style.display === "block") {
       container.style.display = "none";
@@ -352,20 +223,29 @@ author_profile: true
     document.querySelectorAll('.pdf-viewer-container').forEach(el => el.style.display = 'none');
     container.style.display = "block";
 
-    // 加载 PDF
+    // 检查 Adobe 是否加载
+    if (!window.AdobeDC) {
+        alert("PDF组件正在加载中，请稍后再试，或刷新页面。");
+        return;
+    }
+
     var adobeDCView = new AdobeDC.View({
       clientId: CLIENT_ID, 
       divId: divId
     });
     
+    // 关键点：对 URL 进行编码，防止中文乱码导致 404
+    // encodeURIComponent 会把 "中文" 变成 "%E4%B8%AD%E6%96%87"
+    const fileUrl = "/files/" + encodeURIComponent(fileName);
+
     adobeDCView.previewFile({
-      content: { location: { url: "/files/" + fileName } },
+      content: { location: { url: fileUrl } },
       metaData: { fileName: fileName }
     }, 
     {
       embedMode: "SIZED_CONTAINER",
-      showDownloadPDF: false, // 禁止下载
-      showPrintPDF: false,    // 禁止打印
+      showDownloadPDF: false, 
+      showPrintPDF: false,    
       showAnnotationTools: false
     });
   }
