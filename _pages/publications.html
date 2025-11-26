@@ -7,59 +7,6 @@ author_profile: true
      - "https://documentcloud.adobe.com/view-sdk/main.js" # 插入这个，强制加载SDK
 ---
 
-<script type="text/javascript">
-  // 你的 Client ID
-  const CLIENT_ID = "a2fcae797df24d6784d7753a4ae11c8c"; 
-  // R2 官方 Public URL (稳定且快速)
-  const R2_BASE_URL = "https://pub-81197756d83e4b84b291cff1dd4700a6.r2.dev/其文/";
-
-  function openPDF(fileName) {
-    // 检查 Adobe SDK 是否加载成功
-    if (!window.AdobeDC) {
-        alert("PDF组件正在加载中，请刷新页面。");
-        return;
-    }
-
-    const divId = "viewer-" + fileName;
-    const container = document.getElementById(divId);
-    
-    if (!container) {
-        console.error("找不到文件容器:", fileName);
-        return;
-    }
-
-    // Toggle 开关逻辑：如果已打开，则关闭
-    if (container.style.display === "block") {
-      container.style.display = "none";
-      return;
-    }
-    
-    // 关闭其他阅读器，只显示当前点击的
-    document.querySelectorAll('.pdf-viewer-container').forEach(el => el.style.display = 'none');
-    container.style.display = "block";
-
-    // 组合最终 URL：官方链接 + 文件名 (已编码)
-    // 既然简单链接测试成功，这个绝对路径就是可用的
-    const fileUrl = R2_BASE_URL + encodeURIComponent(fileName); 
-
-    var adobeDCView = new AdobeDC.View({
-      clientId: CLIENT_ID, 
-      divId: divId
-    });
-    
-    adobeDCView.previewFile({
-      content: { location: { url: fileUrl } },
-      metaData: { fileName: fileName }
-    }, 
-    {
-      embedMode: "SIZED_CONTAINER",
-      showDownloadPDF: false, // 🚫 禁止下载
-      showPrintPDF: false,    // 🚫 禁止打印
-      showAnnotationTools: false
-    });
-  }
-</script>
-
 <style>
   /* 2. CSS样式 (与之前保持一致) */
   .pub-category {
@@ -365,3 +312,8 @@ author_profile: true
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-一个无力的现代性幻想.pdf" class="pdf-viewer-container"></div>
+
+<div class="end-marker"></div>
+<p>...</p> 
+
+{% include pdf-viewer-logic.html %}
