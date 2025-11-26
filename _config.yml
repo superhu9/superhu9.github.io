@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Hu Yang/ Site Title"
+title                    : "Hu Yang"
 title_separator          : "-"
 name                     : &name " Hu Yang "
 description              : &description "Filmmaker&Student"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -26,7 +26,9 @@ author:
   avatar           : "profile.png"
   name             : "Hu Yang"
   pronouns         : # example: "she/her"  
-  bio              : "Filmmaker & DP based in China"
+  bio              : "Filmmaker | Creative Technologist | AI Researcher
+                   : "I explore the intersection of Cinematic Art and Artificial Intelligence."
+                   : "Currently a Master's student at XUPT, focusing on AIGC, 8K Ultra-HD imaging, and Immersive Media."
   location         : "Xi 'an, Shaanxi Province, China"
   employer         : "Xi 'an University of Posts and Telecommunications"
   uri              : # URL
