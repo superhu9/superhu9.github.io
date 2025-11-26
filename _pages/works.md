@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Selected Works"
+title: "作品（部分）"
 permalink: /works/
 author_profile: true
 ---
@@ -84,7 +84,7 @@ author_profile: true
     <div class="work-meta">
       <span class="meta-tag">🎬 剧情短片</span>
       <span class="meta-tag">📅 2023</span>
-      <span class="meta-tag">👤 制片人 (Producer)</span>
+      <span class="meta-tag">👤 制片人</span>
     </div>
 
     <div class="work-awards">
