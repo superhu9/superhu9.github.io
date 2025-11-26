@@ -1,37 +1,30 @@
-# The following is the order of the links in the header of the website.
-#
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
+# main links
 main:
+  # 1. 首页 (About) - 有些模板这里不显示文字，只显示名字
+  # 如果你想加一个“首页”或“其人”，可以加一行，但通常点左上角名字就回首页了
 
-  - title: "Works"
+  # 2. 作品集 (Works) -> 其作
+  - title: "其作"
     url: /works/
-    
-  - title: "Publications"
+
+  # 3. 文档/论文 (Publications) -> 其文
+  # 对应原本的 /publications/ 页面，你可以在那里放你的PDF
+  - title: "其文"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  # 4. 讲座 (Talks) -> 其言
+  - title: "其言"
+    url: /talks/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
+  # 5. 博客 (Blog Posts) -> 其志
+  - title: "其志"
     url: /year-archive/
-    
-  - title: "CV"
+
+  # 6. 简历 (CV) -> 其历
+  - title: "其历"
     url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/
+
+  # 7. 教学 (Teaching) -> 其教
+  # 如果你以后当助教或老师了可以留着，暂时不需要就加 # 注释掉
+  # - title: "其教"
+  #   url: /teaching/
