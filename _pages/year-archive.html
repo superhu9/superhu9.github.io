@@ -1,19 +1,16 @@
 ---
 layout: archive
+title: "其志"
 permalink: /year-archive/
-title: "Blog posts"
 author_profile: true
-redirect_from:
-  - /wordpress/blog-posts/
 ---
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+<div style="text-align: center; margin: 80px auto; font-family: 'Noto Serif SC', serif; max-width: 600px;">
+  <p style="font-size: 1.6em; font-weight: bold; color: #4a90e2;">
+    文章暂歇，潜心以待。
+  </p>
+  <p style="font-size: 1.1em; color: #666; line-height: 1.8;">
+    万物皆有所待，所思所想，皆为日后创作之源。<br>
+    此页内容正在酝酿之中，敬请期待。
+  </p>
+</div>
