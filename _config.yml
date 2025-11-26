@@ -23,30 +23,22 @@ repository               : "superhu9/superhu9.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Hu Yang"
+  name             : "胡杨"
   pronouns         : # example: "she/her"  
-  bio: >
-    Filmmaker | Creative Technologist | AI Researcher.
-    I explore the intersection of Cinematic Art and Artificial Intelligence.
-    Currently a Master's student at XUPT, focusing on AIGC, 8K Ultra-HD imaging, and Immersive Media.
-  location         : "Xi'an, Shaanxi Province, China"
-  employer         : "Xi'an University of Posts and Telecommunications"
+  bio:             ："生成式人工智能艺术|数字媒体技术|影视摄影与制作"
+  location         : "陕西 西安"
+  employer         : "西安邮电大学戏剧与影视硕士（在读）<br>四川师范大学广播电视编导学士"
   uri              : # URL
   email            : "superhu9@gmail.com" 
 
   # Academic websites
   googlescholar    : "https://scholar.google.com/citations?hl=zh-CN&user=CsNww9EAAAAJ"
-  orcid            : "https://orcid.org/my-orcid?orcid=0009-0002-9991-1594"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  orcid            : "https://orcid.org/0009-0002-9991-1594"
 
   # Repositories and software development
   github           : "https://github.com/superhu9"
   # Social media
-  instagram        : # Username
-  steam            : # Username
-  telegram         : # URL
   twitter          : https://x.com/SuperHu9
-  youtube          : # Username
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
