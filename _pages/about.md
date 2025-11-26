@@ -7,13 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-<h3>作品：《天下无毒·光明永驻》</h3>
-<video width="100%" controls preload="metadata" poster="/images/poster_default.jpg">
-  <source src="https://work.huyang.online/%E3%80%8A%E5%A4%A9%E4%B8%8B%E6%97%A0%E6%AF%92%C2%B7%E5%85%89%E6%98%8E%E6%B0%B8%E9%A9%BB%E3%80%8B.mp4" type="video/mp4">
-  您的浏览器不支持视频播放。
-</video>
-<br>
-
 This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
 
  You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
