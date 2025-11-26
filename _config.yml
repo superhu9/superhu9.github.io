@@ -24,11 +24,11 @@ repository               : "superhu9/superhu9.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Hu Yang"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Filmmaker & DP based in China"
+  location         : "Xi 'an, Shaanxi Province, China"
+  employer         : "Xi 'an University of Posts and Telecommunications"
   uri              : # URL
   email            : "none@example.org" 
 
