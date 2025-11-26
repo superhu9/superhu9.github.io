@@ -5,10 +5,61 @@ permalink: /publications/
 author_profile: true
 ---
 
-<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+  // 你的 Client ID
+  const CLIENT_ID = "a2fcae797df24d6784d7753a4ae11c8c"; 
+  // R2 官方 Public URL (稳定且快速)
+  const R2_BASE_URL = "https://pub-81197756d83e4b84b291cff1dd4700a6.r2.dev/其文/";
+
+  function openPDF(fileName) {
+    // 检查 Adobe SDK 是否加载成功
+    if (!window.AdobeDC) {
+        alert("PDF组件正在加载中，请刷新页面。");
+        return;
+    }
+
+    const divId = "viewer-" + fileName;
+    const container = document.getElementById(divId);
+    
+    if (!container) {
+        console.error("找不到文件容器:", fileName);
+        return;
+    }
+
+    // Toggle 开关逻辑：如果已打开，则关闭
+    if (container.style.display === "block") {
+      container.style.display = "none";
+      return;
+    }
+    
+    // 关闭其他阅读器，只显示当前点击的
+    document.querySelectorAll('.pdf-viewer-container').forEach(el => el.style.display = 'none');
+    container.style.display = "block";
+
+    // 组合最终 URL：官方链接 + 文件名 (已编码)
+    // 既然简单链接测试成功，这个绝对路径就是可用的
+    const fileUrl = R2_BASE_URL + encodeURIComponent(fileName); 
+
+    var adobeDCView = new AdobeDC.View({
+      clientId: CLIENT_ID, 
+      divId: divId
+    });
+    
+    adobeDCView.previewFile({
+      content: { location: { url: fileUrl } },
+      metaData: { fileName: fileName }
+    }, 
+    {
+      embedMode: "SIZED_CONTAINER",
+      showDownloadPDF: false, // 🚫 禁止下载
+      showPrintPDF: false,    // 🚫 禁止打印
+      showAnnotationTools: false
+    });
+  }
+</script>
 
 <style>
-  /* 样式美化 */
+  /* 2. CSS样式 (与之前保持一致) */
   .pub-category {
     margin-top: 50px;
     margin-bottom: 25px;
@@ -72,7 +123,6 @@ author_profile: true
 </p>
 
 <div class="pub-category">📖 小说 · 随想</div>
-
 <div class="pdf-item" onclick="openPDF('随想2.pdf')">
   <span class="pdf-title"><i class="fas fa-book pdf-icon"></i> 随想 Ⅱ</span>
   <span class="pdf-hint">点击阅读</span>
@@ -81,26 +131,21 @@ author_profile: true
 
 
 <div class="pub-category">📊 策划 · 项目</div>
-
-<a href="https://pub-81197756d83e4b84b291cff1dd4700a6.r2.dev/其文/20250322飞跃危机策划案.pdf" target="_blank" style="text-decoration: none;">
-  <div class="pdf-item" style="border: 2px solid #5cb85c;">
-    <span class="pdf-title"><i class="fas fa-file-powerpoint pdf-icon"></i> 2025飞跃危机策划案</span>
-    <span class="pdf-hint">点击阅读（测试链接）→</span>
-  </div>
-</a>
-
+<div class="pdf-item" onclick="openPDF('20250322飞跃危机策划案.pdf')">
+  <span class="pdf-title"><i class="fas fa-file-powerpoint pdf-icon"></i> 2025飞跃危机策划案</span>
+  <span class="pdf-hint">点击阅读</span>
+</div>
+<div id="viewer-20250322飞跃危机策划案.pdf" class="pdf-viewer-container"></div>
 <div class="pdf-item" onclick="openPDF('20240620《方》项目书.pdf')">
   <span class="pdf-title"><i class="fas fa-project-diagram pdf-icon"></i> 《方》项目书</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-20240620《方》项目书.pdf" class="pdf-viewer-container"></div>
-
 <div class="pdf-item" onclick="openPDF('20240125《人生不过词九片》项目书.pdf')">
   <span class="pdf-title"><i class="fas fa-project-diagram pdf-icon"></i> 《人生不过词九片》项目书</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-20240125《人生不过词九片》项目书.pdf" class="pdf-viewer-container"></div>
-
 <div class="pdf-item" onclick="openPDF('20240121西乡春茶包装设计.pdf')">
   <span class="pdf-title"><i class="fas fa-paint-brush pdf-icon"></i> 西乡春茶包装设计</span>
   <span class="pdf-hint">点击阅读</span>
@@ -109,25 +154,21 @@ author_profile: true
 
 
 <div class="pub-category">🔬 学术 · 课题</div>
-
 <div class="pdf-item" onclick="openPDF('20250226DeepSeek与AIGC应用（导演剪辑版）.pdf')">
   <span class="pdf-title"><i class="fas fa-microchip pdf-icon"></i> DeepSeek与AIGC应用 (导演剪辑版)</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-20250226DeepSeek与AIGC应用（导演剪辑版）.pdf" class="pdf-viewer-container"></div>
-
 <div class="pdf-item" onclick="openPDF('基于8K影像的超高清影像情感重构研究.pdf')">
   <span class="pdf-title"><i class="fas fa-eye pdf-icon"></i> 基于8K影像的超高清影像情感重构研究</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-基于8K影像的超高清影像情感重构研究.pdf" class="pdf-viewer-container"></div>
-
 <div class="pdf-item" onclick="openPDF('20240329遥在、体验和重构_8K超高清影像的具身认知与情感召唤.pdf')">
   <span class="pdf-title"><i class="fas fa-vr-cardboard pdf-icon"></i> 遥在、体验和重构：8K超高清影像的具身认知</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-20240329遥在、体验和重构_8K超高清影像的具身认知与情感召唤.pdf" class="pdf-viewer-container"></div>
-
 <div class="pdf-item" onclick="openPDF('20231008被误解的AI革命—人工智能的自我意识与剩余价值探.pdf')">
   <span class="pdf-title"><i class="fas fa-robot pdf-icon"></i> 被误解的AI革命：人工智能的自我意识</span>
   <span class="pdf-hint">点击阅读</span>
@@ -146,11 +187,11 @@ author_profile: true
 </div>
 <div id="viewer-20230909逆熵—人工智能技术在影像修复领域的应用.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('Sora的一致性和因果逻辑性.pdf')">
+<div class="pdf-item" onclick="openPDF('Sora的时间一致性与因果逻辑性.pdf')">
   <span class="pdf-title"><i class="fas fa-video pdf-icon"></i> Sora的时间一致性与因果逻辑性</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
-<div id="viewer-Sora的一致性和因果逻辑性.pdf" class="pdf-viewer-container"></div>
+<div id="viewer-Sora的时间一致性与因果逻辑性.pdf" class="pdf-viewer-container"></div>
 
 <div class="pdf-item" onclick="openPDF('20231013扩展现实领域下的全新视听语言探索_XR技术应用前沿.pdf')">
   <span class="pdf-title"><i class="fas fa-glasses pdf-icon"></i> 扩展现实领域下的全新视听语言探索</span>
@@ -180,7 +221,7 @@ author_profile: true
 <div id="viewer-被阉割的男人和裹挟的红布—唐山打人案舆论有感.pdf" class="pdf-viewer-container"></div>
 
 <div class="pdf-item" onclick="openPDF('诡异的十字交叉—幼稚的青年和成熟的少年.pdf')">
-  <span class="pdf-title"><i class="fas fa-road pdf-icon"></i> 诡异的十字交叉：幼稚的青年和成熟的少年</span>
+  <span class="pdf-title"><i class="fas fa-road pdf-icon"></i> 诡异的十字交叉</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-诡异的十字交叉—幼稚的青年和成熟的少年.pdf" class="pdf-viewer-container"></div>
@@ -204,7 +245,7 @@ author_profile: true
 <div id="viewer-足坛人物志·克罗斯—克莱枫丹童话的新篇章.pdf" class="pdf-viewer-container"></div>
 
 <div class="pdf-item" onclick="openPDF('足坛人物志·武磊—加泰罗尼亚的晚风吹散了一曲中国梦.pdf')">
-  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志·武磊：晚风中国梦</span>
+  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志：武磊——晚风中国梦</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-足坛人物志·武磊—加泰罗尼亚的晚风吹散了一曲中国梦.pdf" class="pdf-viewer-container"></div>
@@ -216,7 +257,7 @@ author_profile: true
 <div id="viewer-足坛人物志·温格—为什么说进攻才是足球？.pdf" class="pdf-viewer-container"></div>
 
 <div class="pdf-item" onclick="openPDF('足坛人物志·贝尔萨—理想纪元失去了最后一个梦想家.pdf')">
-  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志·贝尔萨：失去的梦想家</span>
+  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志：贝尔萨——失去的梦想家</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-足坛人物志·贝尔萨—理想纪元失去了最后一个梦想家.pdf" class="pdf-viewer-container"></div>
@@ -322,58 +363,3 @@ author_profile: true
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-一个无力的现代性幻想.pdf" class="pdf-viewer-container"></div>
-
-
-<script type="text/javascript">
-  // 你的 Client ID
-  const CLIENT_ID = "a2fcae797df24d6784d7753a4ae11c8c"; 
-  
-  // ⭐ 关键更改：使用 R2 官方 Public Development URL 作为基础路径
-  const R2_BASE_URL = "https://pub-81197756d83e4b84b291cff1dd4700a6.r2.dev/其文/";
-
-  function openPDF(fileName) {
-    // 检查 Adobe SDK 是否加载成功
-    if (!window.AdobeDC) {
-        alert("错误：PDF 组件未定义，请刷新页面。");
-        return;
-    }
-
-    const divId = "viewer-" + fileName;
-    const container = document.getElementById(divId);
-    
-    // 检查容器是否存在
-    if (!container) {
-        console.error("找不到文件容器:", fileName);
-        return;
-    }
-
-    // Toggle 开关逻辑
-    if (container.style.display === "block") {
-      container.style.display = "none";
-      return;
-    }
-    
-    // 关闭其他
-    document.querySelectorAll('.pdf-viewer-container').forEach(el => el.style.display = 'none');
-    container.style.display = "block";
-
-    // 组合最终 URL：官方链接 + 文件名 (已编码)
-    const fileUrl = R2_BASE_URL + encodeURIComponent(fileName); 
-
-    var adobeDCView = new AdobeDC.View({
-      clientId: CLIENT_ID, 
-      divId: divId
-    });
-    
-    adobeDCView.previewFile({
-      content: { location: { url: fileUrl } },
-      metaData: { fileName: fileName }
-    }, 
-    {
-      embedMode: "SIZED_CONTAINER",
-      showDownloadPDF: false, // 禁止下载
-      showPrintPDF: false,    // 禁止打印
-      showAnnotationTools: false
-    });
-  }
-</script>
