@@ -274,12 +274,6 @@ author_profile: true
 </div>
 <div id="viewer-《天下公事》说评美剧《越狱》 (越狱).pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('《咒》我们没救了，所以我们更爽.pdf')">
-  <span class="pdf-title"><i class="fas fa-film pdf-icon"></i> 《咒》我们没救了，所以我们更爽</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-《咒》我们没救了，所以我们更爽.pdf" class="pdf-viewer-container"></div>
-
 <div class="pdf-item" onclick="openPDF('二十一世纪韩国电影崛起之路.pdf')">
   <span class="pdf-title"><i class="fas fa-film pdf-icon"></i> 二十一世纪韩国电影崛起之路</span>
   <span class="pdf-hint">点击阅读</span>
@@ -328,52 +322,13 @@ author_profile: true
 </div>
 <div id="viewer-一个无力的现代性幻想.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('足坛人物志·阿布—罗曼帝国之覆.pdf')">
-  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志：阿布——罗曼帝国之覆</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-足坛人物志·阿布—罗曼帝国之覆.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('足坛人物志·贝尔萨—理想纪元失去了最后一个梦想家.pdf')">
-  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志：贝尔萨——失去的梦想家</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-足坛人物志·贝尔萨—理想纪元失去了最后一个梦想家.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('足坛人物志·恩东贝莱—疲惫的身躯装不下艺术家的心灵.pdf')">
-  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志：恩东贝莱——疲惫的心灵</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-足坛人物志·恩东贝莱—疲惫的身躯装不下艺术家的心灵.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('足坛人物志·卡里乌斯—厄运缠身还是心魔难破.pdf')">
-  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志：卡里乌斯——心魔难破</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-足坛人物志·卡里乌斯—厄运缠身还是心魔难破.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('足坛人物志·克罗斯—克莱枫丹童话的新篇章.pdf')">
-  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志：克罗斯——童话的新篇章</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-足坛人物志·克罗斯—克莱枫丹童话的新篇章.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('足坛人物志·温格—为什么说进攻才是足球？.pdf')">
-  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志：温格——为什么说进攻才是足球？</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-足坛人物志·温格—为什么说进攻才是足球？.pdf" class="pdf-viewer-container"></div>
-
-<div class="pdf-item" onclick="openPDF('足坛人物志·武磊—加泰罗尼亚的晚风吹散了一曲中国梦.pdf')">
-  <span class="pdf-title"><i class="fas fa-user-astronaut pdf-icon"></i> 足坛人物志：武磊——晚风中国梦</span>
-  <span class="pdf-hint">点击阅读</span>
-</div>
-<div id="viewer-足坛人物志·武磊—加泰罗尼亚的晚风吹散了一曲中国梦.pdf" class="pdf-viewer-container"></div>
-
 
 <script type="text/javascript">
   // 你的 Client ID
   const CLIENT_ID = "a2fcae797df24d6784d7753a4ae11c8c"; 
+  
+  // ⭐ 关键更改：使用 R2 官方 Public Development URL 作为基础路径
+  const R2_BASE_URL = "https://pub-81197756d83e4b84b291cff1dd4700a6.r2.dev/其文/";
 
   function openPDF(fileName) {
     // 检查 Adobe SDK 是否加载成功
@@ -401,9 +356,7 @@ author_profile: true
     document.querySelectorAll('.pdf-viewer-container').forEach(el => el.style.display = 'none');
     container.style.display = "block";
 
-    // ⭐ 关键点：使用 R2 的绝对路径并对文件名进行编码
-    const R2_BASE_URL = "https://work.huyang.online/其文/";
-    // 对文件名进行 URI 编码，防止中文路径错误
+    // 组合最终 URL：官方链接 + 文件名 (已编码)
     const fileUrl = R2_BASE_URL + encodeURIComponent(fileName); 
 
     var adobeDCView = new AdobeDC.View({
