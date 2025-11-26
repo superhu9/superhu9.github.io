@@ -5,7 +5,13 @@ permalink: /publications/
 author_profile: true
 ---
 
-<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<<script type="text/javascript">...</script>  <-- 脚本在这里
+
+<style>...</style>
+
+<p>这里收录了余之学术课题...</p>
+
+<div class="pub-category">...</div>
 
 <style>
   /* 样式美化 */
@@ -74,13 +80,13 @@ author_profile: true
 
 <div class="pub-category">📖 小说 · 随想</div>
 
-<div class="pdf-item" onclick="openPDF('《随想一》.pdf')">
+<div class="pdf-item" onclick="openPDF('随想2.pdf')">
   <span class="pdf-title"><i class="fas fa-book pdf-icon"></i> 随想 Ⅰ</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-《随想一》.pdf" class="pdf-viewer-container"></div>
 
-<div class="pdf-item" onclick="openPDF('《随想二》.pdf')">
+<div class="pdf-item" onclick="openPDF('随想2.pdf')">
   <span class="pdf-title"><i class="fas fa-book pdf-icon"></i> 随想 Ⅱ</span>
   <span class="pdf-hint">点击阅读</span>
 </div>
@@ -196,54 +202,3 @@ author_profile: true
   <span class="pdf-hint">点击阅读</span>
 </div>
 <div id="viewer-足坛人物志·阿布——罗曼帝国之覆.pdf" class="pdf-viewer-container"></div>
-
-
-<script type="text/javascript">
-  const CLIENT_ID = "a2fcae797df24d6784d7753a4ae11c8c"; // 你的ID
-
-  function openPDF(fileName) {
-    const divId = "viewer-" + fileName;
-    const container = document.getElementById(divId);
-    
-    if (!container) {
-        console.error("找不到文件容器:", fileName);
-        return;
-    }
-
-    // Toggle 开关逻辑
-    if (container.style.display === "block") {
-      container.style.display = "none";
-      return;
-    }
-    
-    // 关闭其他正在显示的阅读器
-    document.querySelectorAll('.pdf-viewer-container').forEach(el => el.style.display = 'none');
-    container.style.display = "block";
-
-    // 检查 Adobe 是否加载
-    if (!window.AdobeDC) {
-        alert("PDF组件正在加载中，请刷新页面再试，或检查网络。");
-        return;
-    }
-
-    // ⭐ 关键更改：使用 R2 的绝对路径，并对中文文件名进行编码
-    const R2_BASE_URL = "https://work.huyang.online/其文/";
-    const fileUrl = R2_BASE_URL + encodeURIComponent(fileName); 
-
-    var adobeDCView = new AdobeDC.View({
-      clientId: CLIENT_ID, 
-      divId: divId
-    });
-    
-    adobeDCView.previewFile({
-      content: { location: { url: fileUrl } },
-      metaData: { fileName: fileName }
-    }, 
-    {
-      embedMode: "SIZED_CONTAINER",
-      showDownloadPDF: false, 
-      showPrintPDF: false,    
-      showAnnotationTools: false
-    });
-  }
-</script>
