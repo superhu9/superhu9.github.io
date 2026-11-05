@@ -11,10 +11,10 @@ main:
     url: /cv/
 
   # ⭐ 其言、其志现在在后面
-  - title: "其言"
-    url: /talks/
-  - title: "其志"
-    url: /year-archive/
+  #  title: "其言"
+  #  url: /talks/
+  #  title: "其志"
+  #  url: /year-archive/
 
   # 7. 教学 (Teaching) -> 其教
   # 如果你以后当助教或老师了可以留着，暂时不需要就加 # 注释掉
